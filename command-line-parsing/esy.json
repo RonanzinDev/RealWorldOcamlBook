@@ -1,0 +1,22 @@
+{
+    "name": "command-line-parsing",
+    "esy": {
+        "buildsInSource": "_build",
+        "build": [
+            "dune build @all"
+        ]
+    },
+    "scripts": {
+        "watch": "esy b dune build @run_hello_bc -w",
+        "start": "esy b dune exec ./cli.exe"
+    },
+    "dependencies": {
+        "ocaml": "4.14.0",
+        "@opam/dune": "3.7.0",
+        "@opam/core": "*"
+    },
+    "devDependencies": {
+        "@opam/ocaml-lsp-server": "*",
+        "esy-fswatch": "github:ulrikstrid/esy-fswatch:windows.json#7328e82b62c1691cd13623fffde0b66d0a0f9498"
+    }
+}
