@@ -8,12 +8,13 @@
     },
     "scripts": {
         "watch": "esy b dune build @run_hello_bc -w",
-        "start": "esy b dune exec ./cli.exe"
+        "start": "esy b dune exec -- ./cli.exe"
     },
     "dependencies": {
         "ocaml": "4.14.0",
         "@opam/dune": "3.7.0",
-        "@opam/core": "*"
+        "@opam/core": "*",
+        "@opam/core_unix": "*"
     },
     "devDependencies": {
         "@opam/ocaml-lsp-server": "*",
